@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="One_Simple_Weather_Info"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="One_Simple_Weather_Info">
+				<Option output="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/One_Simple_Weather_Info" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/virgile/personal_project/One_Simple_Weather_Info/include"/>
+					<Add directory="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 One_Simple_Weather_Info"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="One_Simple_Weather_Info/fast">
+				<Option output="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/One_Simple_Weather_Info" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/virgile/personal_project/One_Simple_Weather_Info/include"/>
+					<Add directory="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 One_Simple_Weather_Info/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/virgile/personal_project/One_Simple_Weather_Info/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/include/libC.h">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_abs.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_atoi.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_div.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_floor.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_getenv.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isalnum.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isalpha.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isascii.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isblank.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_iscntrl.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isdigit.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isgraph.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_islower.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isprint.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_ispunct.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isspace.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isupper.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_isxdigit.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_itoa.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_memchr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_memcmp.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_memcpy.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_memmove.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_memset.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/flag_c.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/flags_a.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/flags_b.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/format.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/include/my.h">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_getnbr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_printf.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_put_base_long_nbr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_put_base_uns_nbr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_put_nbr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_put_uns_nbr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_putchar.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_putstr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_putstr_s.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_revstr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_strcpy.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_printf/my_strlen.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_putchar.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_puts.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_realloc.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_revstr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strcat.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strchr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strcmp.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strcmpi.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strcpy.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strcspn.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strdup.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strlen.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strlwr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strncat.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strncmp.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strncpy.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strnset.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strset.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strspn.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strstr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strtok.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_strupr.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_werror.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/src/main.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
