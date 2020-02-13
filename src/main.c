@@ -48,11 +48,11 @@ static int get_http(string *stream)
         return (84);
     }
     if (init_stream(stream) == 84) return (84);
-    curl_easy_setopt(curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=26c70706489b3765f03adc58765a7f33");
+    curl_easy_setopt(curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=Nancy,fra&APPID=26c70706489b3765f03adc58765a7f33");
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, function_ptr);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, stream);
-    curl_easy_setopt (curl, CURLOPT_VERBOSE, 1L);
+    curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
     result = curl_easy_perform(curl);
     if (result != CURLE_OK) {
         my_werror("fetching API Failed");
@@ -69,6 +69,8 @@ static int parse_data(string *data)
 
     my_printf("%s\n", string);
     free(data->ptr);
+    free(string);
+    free(json);
     return (0);
 }
 

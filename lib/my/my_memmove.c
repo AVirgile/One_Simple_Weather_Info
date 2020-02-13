@@ -17,7 +17,7 @@ void my_memmove(void const *dest, void const *src, size_t size)
 
     if (temp == NULL)
         return;
-    for (j = 0; j < size; j++)
+    for (j = 0; string_src[j]; j++)
         temp[j] = string_src[j];
     temp[j] = 0;
     for (size_t i = 0; i < size; i++)
