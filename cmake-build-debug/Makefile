@@ -1851,6 +1851,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/warning.o: src/warning.c.o
+
+.PHONY : src/warning.o
+
+# target to build an object file
+src/warning.c.o:
+	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/warning.c.o
+.PHONY : src/warning.c.o
+
+src/warning.i: src/warning.c.i
+
+.PHONY : src/warning.i
+
+# target to preprocess a source file
+src/warning.c.i:
+	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/warning.c.i
+.PHONY : src/warning.c.i
+
+src/warning.s: src/warning.c.s
+
+.PHONY : src/warning.s
+
+# target to generate assembly for a file
+src/warning.c.s:
+	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/warning.c.s
+.PHONY : src/warning.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2052,6 +2079,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/warning.o"
+	@echo "... src/warning.i"
+	@echo "... src/warning.s"
 .PHONY : help
 
 

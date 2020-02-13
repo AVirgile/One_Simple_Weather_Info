@@ -81,6 +81,9 @@
 		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/include/libC.h">
 			<Option target="One_Simple_Weather_Info"/>
 		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/include/weather.h">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
 		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_abs.c">
 			<Option target="One_Simple_Weather_Info"/>
 		</Unit>
@@ -274,6 +277,9 @@
 			<Option target="One_Simple_Weather_Info"/>
 		</Unit>
 		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/src/main.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/src/warning.c">
 			<Option target="One_Simple_Weather_Info"/>
 		</Unit>
 		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/CMakeLists.txt">

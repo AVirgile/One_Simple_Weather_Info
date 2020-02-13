@@ -7,6 +7,7 @@
 
 #include "libC.h"
 #include "callback.h"
+#include "weather.h"
 #include <curl/curl.h>
 #include <cjson/cJSON.h>
 #include <stdlib.h>
@@ -76,13 +77,16 @@ static int parse_data(string *data)
 
 int main(int const argc, __attribute__((unused)) char const **argv)
 {
-    int result = 0;
     string stream;
 
     if (argc == 1) {
-        result = get_http(&stream);
-        if (result == 84) return (84);
+        my_printf("*****************************************************"
+                  "\n#  Welcome to a simple but effective Meteo Program  #\n"
+                  "*****************************************************\n");
+        if (warning() == -1) return (0);
+        if (get_http(&stream) == 84) return (84);
         if (parse_data(&stream) == -1) return (84);
+        my_printf("_____________________________\nExiting program....\n");
         return (0);
     }
     my_werror("this program doest not take any arguments\n");
