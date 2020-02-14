@@ -24,7 +24,7 @@ on fedora
 $ sudo dnf install libcurl-devel  
 ```
 the second library is cJSON:
-follow the given instruction in (https://github.com/DaveGamble/cJSON)
+follow the given instruction in https://github.com/DaveGamble/cJSON
 
 To run this project, clone the repository using this command line:
 
