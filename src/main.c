@@ -49,7 +49,7 @@ static int get_http(string *stream)
         return (84);
     }
     if (init_stream(stream) == 84) return (84);
-    curl_easy_setopt(curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=Nancy,fra&APPID=26c70706489b3765f03adc58765a7f33");
+    curl_easy_setopt(curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=Nancy,fr&APPID=26c70706489b3765f03adc58765a7f33");
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, function_ptr);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, stream);
@@ -67,11 +67,52 @@ static int parse_data(string *data)
 {
     cJSON *json = cJSON_Parse(data->ptr);
     char *string = cJSON_Print(json);
+    cJSON *current_element = NULL;
+    cJSON *sub = NULL;
+    cJSON *exception = NULL;
+    char *exception_data = NULL;
+    char *sub_data = NULL;
+    char *current_key = NULL;
+    my_bool_t authorize = MY_FALSE;
 
-    my_printf("%s\n", string);
+    cJSON_ArrayForEach(current_element, json) {
+        authorize = MY_FALSE;
+        current_key = current_element->string;
+        if (current_key != NULL) {
+           my_printf("%s\n", current_key);
+            cJSON_ArrayForEach(sub, current_element) {
+                authorize = MY_TRUE;
+                sub_data = sub->string;
+                if (sub_data != NULL) {
+                    my_printf("        %s = ", sub_data);
+                    if (sub->type == 8)
+                        printf("%f\n", sub->valuedouble);
+                    else if (sub->type == 16)
+                        my_printf("%s\n", sub->valuestring);
+                } else {
+                   for (int i = 0; i < cJSON_GetArraySize(sub); i++) {
+                       exception = cJSON_GetArrayItem(sub, i);
+                       if (exception != NULL) {
+                           my_printf("        %s = ", exception->string);
+                           if (exception->type == 8)
+                               printf("%f\n", exception->valuedouble);
+                           else if (exception->type == 16)
+                               my_printf("%s\n", exception->valuestring);
+                       }
+                   }
+                }
+            }
+            if (authorize == MY_FALSE) {
+                if (current_element->type == 8)
+                    printf("        %f\n", current_element->valuedouble);
+                else if (current_element->type == 16)
+                    my_printf("        %s\n", current_element->valuestring);
+            }
+        }
+    }
     free(data->ptr);
     free(string);
-    free(json);
+    cJSON_Delete(json);
     return (0);
 }
 
@@ -81,7 +122,7 @@ int main(int const argc, __attribute__((unused)) char const **argv)
 
     if (argc == 1) {
         my_printf("*****************************************************"
-                  "\n#  Welcome to a simple but effective Meteo Program  #\n"
+                  "\n#  Welcome to a simple but effective Weather Program  #\n"
                   "*****************************************************\n");
         if (warning() == -1) return (0);
         if (get_http(&stream) == 84) return (84);
