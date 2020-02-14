@@ -1824,6 +1824,33 @@ lib/my/my_werror.c.s:
 	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/lib/my/my_werror.c.s
 .PHONY : lib/my/my_werror.c.s
 
+src/geolocalisation.o: src/geolocalisation.c.o
+
+.PHONY : src/geolocalisation.o
+
+# target to build an object file
+src/geolocalisation.c.o:
+	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/geolocalisation.c.o
+.PHONY : src/geolocalisation.c.o
+
+src/geolocalisation.i: src/geolocalisation.c.i
+
+.PHONY : src/geolocalisation.i
+
+# target to preprocess a source file
+src/geolocalisation.c.i:
+	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/geolocalisation.c.i
+.PHONY : src/geolocalisation.c.i
+
+src/geolocalisation.s: src/geolocalisation.c.s
+
+.PHONY : src/geolocalisation.s
+
+# target to generate assembly for a file
+src/geolocalisation.c.s:
+	$(MAKE) -f CMakeFiles/One_Simple_Weather_Info.dir/build.make CMakeFiles/One_Simple_Weather_Info.dir/src/geolocalisation.c.s
+.PHONY : src/geolocalisation.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -2076,6 +2103,9 @@ help:
 	@echo "... lib/my/my_werror.o"
 	@echo "... lib/my/my_werror.i"
 	@echo "... lib/my/my_werror.s"
+	@echo "... src/geolocalisation.o"
+	@echo "... src/geolocalisation.i"
+	@echo "... src/geolocalisation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

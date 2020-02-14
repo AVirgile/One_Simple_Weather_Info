@@ -12,7 +12,7 @@
 #include <cjson/cJSON.h>
 #include <stdlib.h>
 
-static int init_stream(string *stream)
+int init_stream(string *stream)
 {
     stream->len = 0;
     stream->ptr = malloc(stream->len + 1);
@@ -24,7 +24,7 @@ static int init_stream(string *stream)
     return (0);
 }
 
-static size_t function_ptr(void *ptr, size_t size, size_t nmemb, string *stream)
+size_t function_ptr(void *ptr, size_t size, size_t nmemb, string *stream)
 {
     size_t new_len = stream->len + size * nmemb;
 
@@ -56,7 +56,7 @@ static int get_http(string *stream)
     curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
     result = curl_easy_perform(curl);
     if (result != CURLE_OK) {
-        my_werror("fetching API Failed");
+        my_werror("fetching API Failed (check your internet connection)\n");
         return (84);
     }
     curl_easy_cleanup(curl);
@@ -74,6 +74,7 @@ static int parse_data(string *data)
     char *current_key = NULL;
     my_bool_t authorize = MY_FALSE;
 
+    my_printf("**********\n# result #\n**********\n\n");
     cJSON_ArrayForEach(current_element, json) {
         authorize = MY_FALSE;
         current_key = current_element->string;
@@ -118,15 +119,17 @@ static int parse_data(string *data)
 int main(int const argc, __attribute__((unused)) char const **argv)
 {
     string stream;
+    string localisation;
 
     if (argc == 1) {
-        my_printf("*****************************************************"
+        my_printf("*******************************************************"
                   "\n#  Welcome to a simple but effective Weather Program  #\n"
-                  "*****************************************************\n");
+                  "*******************************************************\n");
         if (warning() == -1) return (0);
+        if (get_loc(&localisation) == 84) return (84);
         if (get_http(&stream) == 84) return (84);
         if (parse_data(&stream) == -1) return (84);
-        my_printf("_____________________________\nExiting program....\n");
+        my_printf("***********************\n# Exiting program.... #\n***********************\n");
         return (0);
     }
     my_werror("this program doest not take any arguments\n");

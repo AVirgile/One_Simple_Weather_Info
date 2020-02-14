@@ -72,4 +72,4 @@ add_executable(One_Simple_Weather_Info
         lib/my/my_strtok.c
         lib/my/my_strupr.c
         lib/my/my_werror.c
-        src/main.c src/warning.c include/weather.h)
+        src/main.c src/warning.c include/weather.h src/geolocalisation.c)
