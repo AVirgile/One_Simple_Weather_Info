@@ -36,7 +36,7 @@ $ make
 ```
 to execute this program type this command
 ```
-$ ./id_generator
+$ ./weather
 ```
 too clean the directory use
 
