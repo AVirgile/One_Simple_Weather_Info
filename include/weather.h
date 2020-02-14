@@ -25,5 +25,7 @@ int warning(void);
 int init_stream(string *stream);
 size_t function_ptr(void *ptr, size_t size, size_t nmemb, string *stream);
 int get_loc(string *localisation);
+char *get_city(string *localisation);
+char *my_memcat(char *dest, char *src);
 
 #endif /* !weather_h */

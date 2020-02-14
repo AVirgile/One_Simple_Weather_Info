@@ -39,17 +39,22 @@ size_t function_ptr(void *ptr, size_t size, size_t nmemb, string *stream)
     return (size * nmemb);
 }
 
-static int get_http(string *stream)
+static int get_http(string *stream, string *localisation)
 {
     CURL *curl = curl_easy_init();
     CURLcode result = 0;
+    char *url = my_strdup("http://api.openweathermap.org/data/2.5/weather?q=");
+    char *city = get_city(localisation);
+    char *end = my_strdup("&APPID=26c70706489b3765f03adc58765a7f33");
 
+    url = my_memcat(url, city);
+    url = my_memcat(url, end);
     if (curl == NULL) {
         my_werror("error while init curl\n");
         return (84);
     }
     if (init_stream(stream) == 84) return (84);
-    curl_easy_setopt(curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=Nancy,fr&APPID=26c70706489b3765f03adc58765a7f33");
+    curl_easy_setopt(curl, CURLOPT_URL, url);
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, function_ptr);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, stream);
@@ -60,6 +65,9 @@ static int get_http(string *stream)
         return (84);
     }
     curl_easy_cleanup(curl);
+    free(url);
+    free(city);
+    free(end);
     return (0);
 }
 
@@ -127,7 +135,7 @@ int main(int const argc, __attribute__((unused)) char const **argv)
                   "*******************************************************\n");
         if (warning() == -1) return (0);
         if (get_loc(&localisation) == 84) return (84);
-        if (get_http(&stream) == 84) return (84);
+        if (get_http(&stream, &localisation) == 84) return (84);
         if (parse_data(&stream) == -1) return (84);
         my_printf("***********************\n# Exiting program.... #\n***********************\n");
         return (0);
