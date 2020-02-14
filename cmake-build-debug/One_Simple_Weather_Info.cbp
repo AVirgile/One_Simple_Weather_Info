@@ -276,6 +276,9 @@
 		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/lib/my/my_werror.c">
 			<Option target="One_Simple_Weather_Info"/>
 		</Unit>
+		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/src/convert_data.c">
+			<Option target="One_Simple_Weather_Info"/>
+		</Unit>
 		<Unit filename="/home/virgile/personal_project/One_Simple_Weather_Info/src/geolocalisation.c">
 			<Option target="One_Simple_Weather_Info"/>
 		</Unit>

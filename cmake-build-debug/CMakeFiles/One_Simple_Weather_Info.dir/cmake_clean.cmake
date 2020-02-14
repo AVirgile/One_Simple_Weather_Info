@@ -62,6 +62,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/One_Simple_Weather_Info.dir/lib/my/my_strtok.c.o"
   "CMakeFiles/One_Simple_Weather_Info.dir/lib/my/my_strupr.c.o"
   "CMakeFiles/One_Simple_Weather_Info.dir/lib/my/my_werror.c.o"
+  "CMakeFiles/One_Simple_Weather_Info.dir/src/convert_data.c.o"
   "CMakeFiles/One_Simple_Weather_Info.dir/src/geolocalisation.c.o"
   "CMakeFiles/One_Simple_Weather_Info.dir/src/main.c.o"
   "CMakeFiles/One_Simple_Weather_Info.dir/src/warning.c.o"

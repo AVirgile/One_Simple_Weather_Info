@@ -93,8 +93,17 @@ static int parse_data(string *data)
                 sub_data = sub->string;
                 if (sub_data != NULL) {
                     my_printf("        %s = ", sub_data);
-                    if (sub->type == 8)
-                        printf("%f\n", sub->valuedouble);
+                    if (sub->type == 8 ) {
+                        if (my_strcmp(sub_data, "temp") == 0 || my_strcmp(sub_data, "temp_min") == 0
+                        || my_strcmp(sub_data, "feels_like") == 0 || my_strcmp(sub_data, "temp_max") == 0)
+                            printf("%f °C\n", convert_kelvin_to_degrees(sub->valuedouble));
+                        else if (my_strcmp(sub_data, "humidity") == 0)
+                            printf("%f %%\n", sub->valuedouble);
+                        else if (my_strcmp(sub_data, "pressure") == 0)
+                            printf("%f hPa\n", sub->valuedouble);
+                        else
+                            printf("%f\n", sub->valuedouble);
+                    }
                     else if (sub->type == 16)
                         my_printf("%s\n", sub->valuestring);
                 } else {

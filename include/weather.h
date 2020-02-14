@@ -27,5 +27,6 @@ size_t function_ptr(void *ptr, size_t size, size_t nmemb, string *stream);
 int get_loc(string *localisation);
 char *get_city(string *localisation);
 char *my_memcat(char *dest, char *src);
+double convert_kelvin_to_degrees(double valuedouble);
 
 #endif /* !weather_h */
