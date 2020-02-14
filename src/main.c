@@ -70,7 +70,6 @@ static int parse_data(string *data)
     cJSON *current_element = NULL;
     cJSON *sub = NULL;
     cJSON *exception = NULL;
-    char *exception_data = NULL;
     char *sub_data = NULL;
     char *current_key = NULL;
     my_bool_t authorize = MY_FALSE;
