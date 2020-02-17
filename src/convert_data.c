@@ -2,7 +2,7 @@
 ** Virgile AGNEL (Personal Project)
 ** One_Simple_Weather_info
 ** File description:
-** convert_data.c
+** convert_data_to_degrees.c
 */
 
 #include "libC.h"
