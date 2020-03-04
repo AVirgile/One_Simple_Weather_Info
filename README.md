@@ -27,7 +27,7 @@ follow the given instruction in https://github.com/DaveGamble/cJSON to install t
 To run this project, clone the repository using this command line:
 
 ```
-$ git clone https://github.com/AVirgile/A_Random_ID_generator.git
+$ git clone https://github.com/AVirgile/One_Simple_Weather_info.git
 ```
 then after go to the clone repository and compile with the following command:
 
